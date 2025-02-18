@@ -1,0 +1,28 @@
+<html>    <head>        <script>
+    function validate(){
+        var user=document.myForm.username.value;
+        var pwd=document.myForm.password.value;  
+if(user==""&&pwd==""){
+    document.write("Please enter username & password")
+}
+else if(pwd.length<8){
+    document.write("Enter password with above 8 characters")
+}
+else if(user=="admin" && pwd=="admin12345"){
+    document.write("Login is success")
+}
+else{
+    document.write("Login is failed")
+}
+    }
+</script>    </head>    <body>
+<form name="myForm" method="post" onsubmit="validate()">
+    Enter UserName:
+    <input type="text" name="username"/><br>
+    Enter Password:
+    <input type="password" name="password"/><br>
+    <input type="submit" value="submit"/>
+
+</form>
+</body>
+</html>

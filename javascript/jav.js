@@ -1,0 +1,1 @@
+console.log("welcome to new java script file");
